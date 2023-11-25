@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MarketPhone</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_fav">Wishlist</string>
+    <string name="menu_profile">Profile</string>
+    <string name="required_point">Rp </string>
+    <string name="search_Phone">Cari Gadget Impian Anda!</string>
+    <string name="minus_symbol">—</string>
+    <string name="plus_symbol">＋</string>
+    <string name="add_to_Fav">Tambah ke Wishlist : Rp  </string>
+    <string name="total_order">Total pesanan : Rp </string>
+    <string name="back">Back</string>
+    <string name="market_phone">Market Phone</string>
+    <string name="share_message">Hey, Saya Membeli %1$d Gadget dengan harga %2$d . Apakah Sedia Stok?</string>
+    <string name="no_data_available">Data Kosong</string>
+    <string name="nama_profil">Nama : Ahmad Rivaio</string>
+    <string name="email">Email : Ahmadrivai.fun@gmail.com</string>
+</resources>
