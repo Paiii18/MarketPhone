@@ -32,9 +32,9 @@ class MarketRepository {
     fun updateOrderMarket(marketId: Long, newCountValue: Int): Flow<Boolean> {
         val index = orderMarkets.indexOfFirst { it.market.id == marketId }
         val result = if (index >= 0) {
-            val orderMarket = orderMarkets [index]
+            val orderMarket = orderMarkets[index]
             orderMarkets[index] =
-                orderMarket.copy(market = orderMarket.market, count =  newCountValue)
+                orderMarket.copy(market = orderMarket.market, count = newCountValue)
             true
         } else {
             false
@@ -52,7 +52,7 @@ class MarketRepository {
 
     fun getAddedOrderMarkets(): Flow<List<OrderMarket>> {
         return getAllMarkets()
-            .map {orderMarkets ->
+            .map { orderMarkets ->
                 orderMarkets.filter { orderMarkets ->
                     orderMarkets.count != 0
                 }

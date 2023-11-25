@@ -52,19 +52,21 @@ fun DetailScreen(
         )
     ),
     navigateBack: () -> Unit,
-    navigateToCart: () -> Unit
+    navigateToCart: () -> Unit,
 ) {
     viewModel.uiState.collectAsState(initial = UiState.Loading).value.let { uiState ->
         when (uiState) {
             is UiState.Loading -> {
                 viewModel.getMarketById(marketId)
             }
+
             is UiState.Success -> {
                 val data = uiState.data
                 DetailContent(
                     data.market.image,
                     data.market.title,
                     data.market.desc,
+                    data.market.price,
                     data.count,
                     onBackClick = navigateBack,
                     onAddToCart = { count ->
@@ -73,6 +75,7 @@ fun DetailScreen(
                     }
                 )
             }
+
             is UiState.Error -> {}
         }
     }
@@ -104,20 +107,31 @@ fun DetailContent(
                     painter = painterResource(image),
                     contentDescription = null,
                     contentScale = ContentScale.Crop,
-                    modifier = modifier.height(400.dp)
+                    modifier = modifier
+                        .height(400.dp)
                         .fillMaxWidth()
                         .clip(RoundedCornerShape(bottomStart = 20.dp, bottomEnd = 20.dp))
                 )
                 Icon(
                     imageVector = Icons.Default.ArrowBack,
                     contentDescription = stringResource(R.string.back),
-                    modifier = Modifier.padding(16.dp).clickable { onBackClick() }
+                    modifier = Modifier
+                        .padding(16.dp)
+                        .clickable { onBackClick() }
                 )
             }
             Column(
-                horizontalAlignment = Alignment.CenterHorizontally,
+                horizontalAlignment = Alignment.Start,
                 modifier = Modifier.padding(16.dp)
             ) {
+                Text(
+                    text = "Rp ${formatAsCurrency(basePoint)}",
+                    textAlign = TextAlign.Center,
+                    style = MaterialTheme.typography.headlineSmall.copy(
+                        fontWeight = FontWeight.ExtraBold
+                    ),
+                )
+                Spacer(modifier = modifier.height(10.dp))
                 Text(
                     text = title,
                     textAlign = TextAlign.Center,
@@ -125,13 +139,15 @@ fun DetailContent(
                         fontWeight = FontWeight.ExtraBold
                     ),
                 )
+                Spacer(modifier = modifier.height(20.dp))
                 Text(
-                    text = stringResource(R.string.required_point, basePoint),
-                    style = MaterialTheme.typography.titleMedium.copy(
+                    text = "Description",
+                    textAlign = TextAlign.Center,
+                    style = MaterialTheme.typography.headlineSmall.copy(
                         fontWeight = FontWeight.ExtraBold
                     ),
-                    color = MaterialTheme.colorScheme.secondary
                 )
+                Spacer(modifier = modifier.height(20.dp))
                 Text(
                     text = desc,
                     style = MaterialTheme.typography.bodyMedium,
@@ -139,7 +155,12 @@ fun DetailContent(
                 )
             }
         }
-        Spacer(modifier = Modifier.fillMaxWidth().height(4.dp).background(LightGray))
+        Spacer(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(4.dp)
+                .background(LightGray)
+        )
         Column(
             modifier = Modifier.padding(16.dp)
         ) {
@@ -148,7 +169,9 @@ fun DetailContent(
                 orderCount,
                 onProductIncreased = { orderCount++ },
                 onProductDecreased = { if (orderCount > 0) orderCount-- },
-                modifier = Modifier.align(Alignment.CenterHorizontally).padding(bottom = 16.dp)
+                modifier = Modifier
+                    .align(Alignment.CenterHorizontally)
+                    .padding(bottom = 16.dp)
             )
             totalPoint = basePoint * orderCount
             OrderButton(
@@ -167,7 +190,8 @@ fun DetailContent(
 fun DetailContentPreview() {
     MarketPhoneTheme {
         DetailContent(
-            R.drawable.hp1, "Asus ROG Phone 7 Ultimate",
+            R.drawable.hp1,
+           "Asus ROG Phone 7 Ultimate",
             "Asus ROG Phone 7 Ultimate\n" +
                     "\n" +
                     "Jaringan GSM / HSPA / LTE / 5G\n" +

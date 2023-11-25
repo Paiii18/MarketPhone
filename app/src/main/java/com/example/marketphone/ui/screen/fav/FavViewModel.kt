@@ -27,9 +27,9 @@ class FavViewModel(
         }
     }
 
-    fun updateOrderReward(rewardId: Long, count: Int) {
+    fun updateOrderMarket(marketId: Long, count: Int) {
         viewModelScope.launch {
-            repository.updateOrderMarket(rewardId, count)
+            repository.updateOrderMarket(marketId, count)
                 .collect { isUpdated ->
                     if (isUpdated) {
                         getAddedOrderMarkets()

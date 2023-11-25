@@ -4,7 +4,8 @@ import com.example.marketphone.R
 
 object FakeMarketDataSource {
     val dummyMarket = listOf(
-        Market(1, R.drawable.hp1, "Asus ROG Phone 7 Ultimate",
+        Market(
+            1, R.drawable.hp1, "Asus ROG Phone 7 Ultimate",
             "Asus ROG Phone 7 Ultimate\n" +
                     "\n" +
                     "Jaringan GSM / HSPA / LTE / 5G\n" +
@@ -30,9 +31,11 @@ object FakeMarketDataSource {
                     "Lainnya\n" +
                     "\n" +
                     "NFC Yes",
-            18999000),
+            18999000
+        ),
 
-        Market(2, R.drawable.hp2, "Asus ROG Phone 7",
+        Market(
+            2, R.drawable.hp2, "Asus ROG Phone 7",
             "Asus ROG Phone 7 \n" +
                     "\n" +
                     "Jaringan GSM / HSPA / LTE / 5G\n" +
@@ -58,8 +61,10 @@ object FakeMarketDataSource {
                     "Lainnya\n" +
                     "\n" +
                     "NFC Yes",
-            13999000),
-        Market(3, R.drawable.hp3, "Infinix Smart 8",
+            13999000
+        ),
+        Market(
+            3, R.drawable.hp3, "Infinix Smart 8",
             "Infinix Smart 8\n" +
                     "\n" +
                     "Jaringan GSM / HSPA / LTE\n" +
@@ -83,8 +88,10 @@ object FakeMarketDataSource {
                     "Lainnya\n" +
                     "\n" +
                     "NFC -",
-            1249000),
-        Market(4, R.drawable.hp4, "Infinix Zero 30 4G",
+            1249000
+        ),
+        Market(
+            4, R.drawable.hp4, "Infinix Zero 30 4G",
             "Infinix Zero 30 4G\n" +
                     "\n" +
                     "Jaringan GSM / HSPA / LTE\n" +
@@ -108,8 +115,10 @@ object FakeMarketDataSource {
                     "Lainnya\n" +
                     "\n" +
                     "NFC YES",
-            3099000),
-        Market(5, R.drawable.hp5, "iPhone 15 Pro Max",
+            3099000
+        ),
+        Market(
+            5, R.drawable.hp5, "iPhone 15 Pro Max",
             "iPhone 15 Pro Max\n" +
                     "\n" +
                     "Jaringan GSM / HSPA / LTE / 5G\n" +
@@ -133,8 +142,10 @@ object FakeMarketDataSource {
                     "Lainnya\n" +
                     "\n" +
                     "NFC YES",
-            25499000),
-        Market(6, R.drawable.hp6, "iPhone 14 Pro Max",
+            25499000
+        ),
+        Market(
+            6, R.drawable.hp6, "iPhone 14 Pro Max",
             "iPhone 14 Pro Max\n" +
                     "\n" +
                     "Jaringan GSM / HSPA / LTE / 5G\n" +
@@ -158,8 +169,10 @@ object FakeMarketDataSource {
                     "Lainnya\n" +
                     "\n" +
                     "NFC YES",
-            19499000),
-        Market(7, R.drawable.hp7, "Google Pixel 7",
+            19499000
+        ),
+        Market(
+            7, R.drawable.hp7, "Google Pixel 7",
             "Google Pixel 7\n" +
                     "\n" +
                     "Jaringan GSM / HSPA / EVDO / LTE / 5G\n" +
@@ -184,8 +197,10 @@ object FakeMarketDataSource {
                     "Lainnya\n" +
                     "\n" +
                     "NFC YES",
-            19499000),
-        Market(8, R.drawable.hp8, "Google Pixel 8 Pro",
+            19499000
+        ),
+        Market(
+            8, R.drawable.hp8, "Google Pixel 8 Pro",
             "Google Pixel 8 Pro\n" +
                     "\n" +
                     "Jaringan GSM / HSPA / LTE /5G\n" +
@@ -210,8 +225,10 @@ object FakeMarketDataSource {
                     "Lainnya\n" +
                     "\n" +
                     "NFC YES",
-            19499000),
-        Market(9, R.drawable.hp9, "iPhone 14 Pro Max",
+            19499000
+        ),
+        Market(
+            9, R.drawable.hp9, "iPhone 14 Pro Max",
             "iPhone 14 Pro Max\n" +
                     "\n" +
                     "Jaringan GSM / HSPA / LTE /5G\n" +
@@ -235,8 +252,10 @@ object FakeMarketDataSource {
                     "Lainnya\n" +
                     "\n" +
                     "NFC YES",
-            19499000),
-        Market(10, R.drawable.hp10, "iPhone 14 Pro Max",
+            19499000
+        ),
+        Market(
+            10, R.drawable.hp10, "iPhone 14 Pro Max",
             "iPhone 14 Pro Max\n" +
                     "\n" +
                     "Jaringan GSM / HSPA / LTE /5G\n" +
@@ -260,8 +279,10 @@ object FakeMarketDataSource {
                     "Lainnya\n" +
                     "\n" +
                     "NFC YES",
-            19499000),
-        Market(11, R.drawable.hp11, "iPhone 14 Pro Max",
+            19499000
+        ),
+        Market(
+            11, R.drawable.hp11, "iPhone 14 Pro Max",
             "iPhone 14 Pro Max\n" +
                     "\n" +
                     "Jaringan GSM / HSPA / LTE /5G\n" +
@@ -285,8 +306,10 @@ object FakeMarketDataSource {
                     "Lainnya\n" +
                     "\n" +
                     "NFC YES",
-            19499000),
-        Market(12, R.drawable.hp12, "iPhone 14 Pro Max",
+            19499000
+        ),
+        Market(
+            12, R.drawable.hp12, "iPhone 14 Pro Max",
             "iPhone 14 Pro Max\n" +
                     "\n" +
                     "Jaringan GSM / HSPA / LTE /5G\n" +
@@ -310,6 +333,7 @@ object FakeMarketDataSource {
                     "Lainnya\n" +
                     "\n" +
                     "NFC YES",
-            19499000),
+            19499000
+        ),
     )
 }
