@@ -141,7 +141,7 @@ fun DetailContent(
                 )
                 Spacer(modifier = modifier.height(20.dp))
                 Text(
-                    text = "Description",
+                    text = "Deskripsi",
                     textAlign = TextAlign.Center,
                     style = MaterialTheme.typography.headlineSmall.copy(
                         fontWeight = FontWeight.ExtraBold

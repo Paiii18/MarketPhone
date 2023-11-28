@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.CircularProgressIndicator
@@ -18,6 +19,7 @@ import androidx.compose.material3.SearchBar
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
@@ -25,6 +27,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.marketphone.R
 import com.example.marketphone.di.Injection
+import com.example.marketphone.model.OrderMarket
 import com.example.marketphone.ui.common.UiState
 import com.example.marketphone.ui.screen.ViewModelFactory
 import com.example.marketphone.ui.screen.home.HomeViewModel
@@ -50,7 +53,7 @@ fun HomeScreen(
 
             is UiState.Success -> {
                 HomeContent(
-                    orderBadminton = uiState.data,
+                    orderMarket = uiState.data,
                     modifier = modifier,
                     navigateToDetail = navigateToDetail,
                 )
@@ -95,11 +98,11 @@ fun SearchBarDua(
 
 @Composable
 fun HomeContent(
-    orderBadminton: List<OrderMarket>,
+    orderMarket: List<OrderMarket>,
     modifier: Modifier = Modifier,
     navigateToDetail: (Long) -> Unit,
 ) {
-    if (orderBadminton.isEmpty()) {
+    if (orderMarket.isEmpty()) {
         Text(
             text = stringResource(R.string.no_data_available), // Replace with your actual string resource
             modifier = Modifier

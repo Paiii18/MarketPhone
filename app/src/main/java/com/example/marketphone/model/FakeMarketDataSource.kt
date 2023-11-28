@@ -197,7 +197,7 @@ object FakeMarketDataSource {
                     "Lainnya\n" +
                     "\n" +
                     "NFC YES",
-            19499000
+            9550000
         ),
         Market(
             8, R.drawable.hp8, "Google Pixel 8 Pro",
@@ -225,115 +225,123 @@ object FakeMarketDataSource {
                     "Lainnya\n" +
                     "\n" +
                     "NFC YES",
-            19499000
+            18975000
         ),
         Market(
-            9, R.drawable.hp9, "iPhone 14 Pro Max",
-            "iPhone 14 Pro Max\n" +
+            9, R.drawable.hp9, "Redmi Note 13R Pro",
+            "Redmi Note 13R Pro\n" +
                     "\n" +
-                    "Jaringan GSM / HSPA / LTE /5G\n" +
+                    "Jaringan GSM / HSPA / LTE / 5G\n" +
                     "\n" +
-                    "Sistem Operasi iOS 17, upgradable to iOS 17.1.1\n" +
+                    "Sistem Operasi Android 13\n" +
                     "\n" +
-                    "Prosesor iOS 17, upgradable to iOS 17.1.1 Hexa-core (2x3.78 GHz + 4x2.11 GHz)\n" +
+                    "Prosesor Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm), " +
+                    "Octa-core (1x3.2 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz " +
+                    "Cortex-A710 & 3x2.0 GHz Cortex-A510)\n" +
                     "\n" +
-                    "GPU Apple GPU (6-core graphics)\n" +
+                    "GPU Adreno 740\n" +
                     "\n" +
-                    "RAM 8 GB Kapasitas 256 GB\n" +
+                    "RAM 16 GB Kapasitas 512 GB\n" +
                     "\n" +
-                    "Ukuran Layar 6.7 inches, 110.2 cm2 (~89.8% screen-to-body ratio) " +
-                    "Tipe Layar LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM) " +
-                    "Resolusi Layar 1290 x 2796 pixels, 19.5:9 ratio (~460 ppi density)\n" +
+                    "Ukuran Layar 6.78 inch" +
+                    " Tipe Layar AMOLED, 1B colors, 165Hz, HDR10+, 1000 nits (HBM), 1500 nits (peak)" +
+                    " Resolusi Layar 1080 x 2448 pixels (~395 ppi density)\n" +
                     "\n" +
-                    "Sensor Face ID, accelerometer, gyro, proximity, compass, barometer\n" +
+                    "Sensor Fingerprint (under display, optical), accelerometer, gyro, proximity, compass\n" +
                     "\n" +
-                    "Baterai 4323 mAh\n" +
+                    "Baterai 6000 mAh\n" +
                     "\n" +
                     "Lainnya\n" +
                     "\n" +
-                    "NFC YES",
-            19499000
+                    "NFC Yes",
+            3790000
         ),
         Market(
-            10, R.drawable.hp10, "iPhone 14 Pro Max",
-            "iPhone 14 Pro Max\n" +
+            10, R.drawable.hp10, "Redmi Note 13 Pro+",
+            "Redmi Note 13 Pro+\n" +
                     "\n" +
-                    "Jaringan GSM / HSPA / LTE /5G\n" +
+                    "Jaringan GSM / HSPA / LTE / 5G\n" +
                     "\n" +
-                    "Sistem Operasi iOS 17, upgradable to iOS 17.1.1\n" +
+                    "Sistem Operasi Android 13\n" +
                     "\n" +
-                    "Prosesor iOS 17, upgradable to iOS 17.1.1 Hexa-core (2x3.78 GHz + 4x2.11 GHz)\n" +
+                    "Prosesor Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm), " +
+                    "Octa-core (1x3.2 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz " +
+                    "Cortex-A710 & 3x2.0 GHz Cortex-A510)\n" +
                     "\n" +
-                    "GPU Apple GPU (6-core graphics)\n" +
+                    "GPU Adreno 740\n" +
                     "\n" +
-                    "RAM 8 GB Kapasitas 256 GB\n" +
+                    "RAM 16 GB Kapasitas 512 GB\n" +
                     "\n" +
-                    "Ukuran Layar 6.7 inches, 110.2 cm2 (~89.8% screen-to-body ratio) " +
-                    "Tipe Layar LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM) " +
-                    "Resolusi Layar 1290 x 2796 pixels, 19.5:9 ratio (~460 ppi density)\n" +
+                    "Ukuran Layar 6.78 inch" +
+                    " Tipe Layar AMOLED, 1B colors, 165Hz, HDR10+, 1000 nits (HBM), 1500 nits (peak)" +
+                    " Resolusi Layar 1080 x 2448 pixels (~395 ppi density)\n" +
                     "\n" +
-                    "Sensor Face ID, accelerometer, gyro, proximity, compass, barometer\n" +
+                    "Sensor Fingerprint (under display, optical), accelerometer, gyro, proximity, compass\n" +
                     "\n" +
-                    "Baterai 4323 mAh\n" +
+                    "Baterai 6000 mAh\n" +
                     "\n" +
                     "Lainnya\n" +
                     "\n" +
-                    "NFC YES",
-            19499000
+                    "NFC Yes",
+            4000000
         ),
         Market(
-            11, R.drawable.hp11, "iPhone 14 Pro Max",
-            "iPhone 14 Pro Max\n" +
+            11, R.drawable.hp11, "Samsung Galaxy S23 FE",
+            "Samsung Galaxy S23 FE\n" +
                     "\n" +
-                    "Jaringan GSM / HSPA / LTE /5G\n" +
+                    "Jaringan GSM / HSPA / LTE / 5G\n" +
                     "\n" +
-                    "Sistem Operasi iOS 17, upgradable to iOS 17.1.1\n" +
+                    "Sistem Operasi Android 13\n" +
                     "\n" +
-                    "Prosesor iOS 17, upgradable to iOS 17.1.1 Hexa-core (2x3.78 GHz + 4x2.11 GHz)\n" +
+                    "Prosesor Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm), " +
+                    "Octa-core (1x3.2 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz " +
+                    "Cortex-A710 & 3x2.0 GHz Cortex-A510)\n" +
                     "\n" +
-                    "GPU Apple GPU (6-core graphics)\n" +
+                    "GPU Adreno 740\n" +
                     "\n" +
-                    "RAM 8 GB Kapasitas 256 GB\n" +
+                    "RAM 16 GB Kapasitas 512 GB\n" +
                     "\n" +
-                    "Ukuran Layar 6.7 inches, 110.2 cm2 (~89.8% screen-to-body ratio) " +
-                    "Tipe Layar LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM) " +
-                    "Resolusi Layar 1290 x 2796 pixels, 19.5:9 ratio (~460 ppi density)\n" +
+                    "Ukuran Layar 6.78 inch" +
+                    " Tipe Layar AMOLED, 1B colors, 165Hz, HDR10+, 1000 nits (HBM), 1500 nits (peak)" +
+                    " Resolusi Layar 1080 x 2448 pixels (~395 ppi density)\n" +
                     "\n" +
-                    "Sensor Face ID, accelerometer, gyro, proximity, compass, barometer\n" +
+                    "Sensor Fingerprint (under display, optical), accelerometer, gyro, proximity, compass\n" +
                     "\n" +
-                    "Baterai 4323 mAh\n" +
+                    "Baterai 6000 mAh\n" +
                     "\n" +
                     "Lainnya\n" +
                     "\n" +
-                    "NFC YES",
-            19499000
+                    "NFC Yes",
+            8999000
         ),
         Market(
-            12, R.drawable.hp12, "iPhone 14 Pro Max",
-            "iPhone 14 Pro Max\n" +
+            12, R.drawable.hp12, "Samsung Galaxy Z Fold 5",
+            "Samsung Galaxy Z Fold 5\n" +
                     "\n" +
-                    "Jaringan GSM / HSPA / LTE /5G\n" +
+                    "Jaringan GSM / HSPA / LTE / 5G\n" +
                     "\n" +
-                    "Sistem Operasi iOS 17, upgradable to iOS 17.1.1\n" +
+                    "Sistem Operasi Android 13\n" +
                     "\n" +
-                    "Prosesor iOS 17, upgradable to iOS 17.1.1 Hexa-core (2x3.78 GHz + 4x2.11 GHz)\n" +
+                    "Prosesor Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm), " +
+                    "Octa-core (1x3.2 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz " +
+                    "Cortex-A710 & 3x2.0 GHz Cortex-A510)\n" +
                     "\n" +
-                    "GPU Apple GPU (6-core graphics)\n" +
+                    "GPU Adreno 740\n" +
                     "\n" +
-                    "RAM 8 GB Kapasitas 256 GB\n" +
+                    "RAM 16 GB Kapasitas 512 GB\n" +
                     "\n" +
-                    "Ukuran Layar 6.7 inches, 110.2 cm2 (~89.8% screen-to-body ratio) " +
-                    "Tipe Layar LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 2000 nits (HBM) " +
-                    "Resolusi Layar 1290 x 2796 pixels, 19.5:9 ratio (~460 ppi density)\n" +
+                    "Ukuran Layar 6.78 inch" +
+                    " Tipe Layar AMOLED, 1B colors, 165Hz, HDR10+, 1000 nits (HBM), 1500 nits (peak)" +
+                    " Resolusi Layar 1080 x 2448 pixels (~395 ppi density)\n" +
                     "\n" +
-                    "Sensor Face ID, accelerometer, gyro, proximity, compass, barometer\n" +
+                    "Sensor Fingerprint (under display, optical), accelerometer, gyro, proximity, compass\n" +
                     "\n" +
-                    "Baterai 4323 mAh\n" +
+                    "Baterai 6000 mAh\n" +
                     "\n" +
                     "Lainnya\n" +
                     "\n" +
-                    "NFC YES",
-            19499000
+                    "NFC Yes",
+            24999000
         ),
     )
 }
